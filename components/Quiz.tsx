@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { EXPERT, QUIZ_QUESTIONS } from '../constants';
+import { EXPERT, QUIZ_QUESTIONS } from '../constants.ts';
 import { ChevronRight, Loader2, X } from 'lucide-react';
 
 interface QuizProps {
@@ -93,7 +93,7 @@ const Quiz: React.FC<QuizProps> = ({ onFinish, isAnalyzing, onCancel }) => {
           <div className="flex-1 flex flex-col items-center justify-center space-y-6 md:space-y-8 py-10">
             <div className="relative">
               <div className="w-20 h-20 md:w-28 md:h-28 border-4 border-[#d4af37]/10 rounded-full flex items-center justify-center">
-                <Loader2 className="animate-spin text-[#d4af37]" size={40} md:size={48} />
+                <Loader2 className="animate-spin text-[#d4af37]" size={40} />
               </div>
               <div className="absolute inset-0 bg-[#d4af37]/5 blur-xl rounded-full" />
             </div>

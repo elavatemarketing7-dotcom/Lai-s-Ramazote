@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { EXPERT, SOCIAL_PROOF_IMAGES, METHOD_IMAGES, TESTIMONIALS } from '../constants';
-import Gallery from './Gallery';
+import { EXPERT, SOCIAL_PROOF_IMAGES, METHOD_IMAGES, TESTIMONIALS } from '../constants.ts';
+import Gallery from './Gallery.tsx';
 import { CheckCircle2, MessageSquare, PlayCircle, MapPin, Instagram, Sparkles, ShieldCheck, Heart, Star, Quote, ArrowRight, Navigation } from 'lucide-react';
 
 const LandingPage: React.FC = () => {

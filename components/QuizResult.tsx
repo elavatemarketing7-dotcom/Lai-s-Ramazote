@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { EXPERT } from '../constants';
+import { EXPERT } from '../constants.ts';
 import { Send, MessageSquare, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 interface QuizResultProps {

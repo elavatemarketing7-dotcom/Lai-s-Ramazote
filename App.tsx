@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
-import LandingPage from './components/LandingPage';
-import Quiz from './components/Quiz';
-import QuizResult from './components/QuizResult';
-import { EXPERT } from './constants';
+import LandingPage from './components/LandingPage.tsx';
+import Quiz from './components/Quiz.tsx';
+import QuizResult from './components/QuizResult.tsx';
+import { EXPERT } from './constants.ts';
 
 enum FlowState {
   WELCOME,
