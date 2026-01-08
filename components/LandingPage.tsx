@@ -98,10 +98,10 @@ const LandingPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="relative w-full max-w-6xl mx-auto aspect-video rounded-[3rem] md:rounded-[4rem] overflow-hidden shadow-[0_0_80px_rgba(212,175,55,0.15)] border border-white/10 group">
+          <div className="relative w-full max-w-6xl mx-auto aspect-video overflow-hidden group">
              <video 
               src={EXPERT.introVideo} 
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" 
+              className="w-full h-full object-cover" 
               controls 
               poster={EXPERT.secondaryPhotos[0]}
               autoPlay
@@ -109,7 +109,6 @@ const LandingPage: React.FC = () => {
               loop
               playsInline
             />
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 pointer-events-none" />
           </div>
         </div>
       </section>
