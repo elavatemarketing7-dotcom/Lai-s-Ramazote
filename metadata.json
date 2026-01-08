@@ -1,0 +1,8 @@
+{
+  "name": "Laís Ramazote - Harmonização Facial Premium",
+  "description": "Landing page de alta conversão para Harmonização Facial com foco em autoridade e exclusividade.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
