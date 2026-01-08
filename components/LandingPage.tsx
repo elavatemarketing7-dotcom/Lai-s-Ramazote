@@ -24,7 +24,7 @@ const LandingPage: React.FC = () => {
           <div className="order-2 md:order-1 space-y-10 animate-fade-in-up">
             <div className="space-y-6">
               <span className="text-[#d4af37] font-bold tracking-[0.4em] text-xs uppercase flex items-center gap-2">
-                <Sparkles size={14} /> Especialista em Harmonização Facial
+                <span className="animate-pulse"><Sparkles size={14} /></span> Especialista em Harmonização Facial
               </span>
               <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight">
                 Realce sua <span className="gold-text">Beleza Única</span> com Naturalidade
@@ -98,10 +98,11 @@ const LandingPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="relative w-full max-w-6xl mx-auto aspect-video overflow-hidden group">
+          {/* Video Container adjusted to respect original proportions */}
+          <div className="relative w-full max-w-5xl mx-auto overflow-hidden group">
              <video 
               src={EXPERT.introVideo} 
-              className="w-full h-full object-cover" 
+              className="w-full h-auto block" 
               controls 
               poster={EXPERT.secondaryPhotos[0]}
               autoPlay
